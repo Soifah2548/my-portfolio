@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio - สร้อยฟ้า พุดสีหมอก</title>
+<meta charset="UTF-8">
+<title>Portfolio - สร้อยฟ้า พุดสีหมอก</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    overflow-x: hidden;
+}
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* การ์ตูนลอยพื้นหลัง */
+.background-decor span {
+    position: fixed;
+    font-size: 40px;
+    animation: float 8s infinite ease-in-out;
+    opacity: 0.8;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+.background-decor span:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+.background-decor span:nth-child(2) { top: 30%; left: 80%; animation-delay: 2s; }
+.background-decor span:nth-child(3) { top: 70%; left: 15%; animation-delay: 4s; }
+.background-decor span:nth-child(4) { top: 60%; left: 60%; animation-delay: 1s; }
+.background-decor span:nth-child(5) { top: 20%; left: 40%; animation-delay: 3s; }
+.background-decor span:nth-child(6) { top: 85%; left: 75%; animation-delay: 5s; }
 
-        header p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
 
-        h2 {
-            border-bottom: 2px solid white;
-            padding-bottom: 5px;
-        }
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
 
-        .card {
-            background-color: white;
-            color: #333;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-        }
+h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+.card {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
 
-        a {
-            color: #2575fc;
-            text-decoration: none;
-            font-weight: bold;
-        }
+a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-    </style>
+.qr {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.qr img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+</style>
 </head>
 
 <body>
+
+<div class="background-decor">
+    <span>🐶</span>
+    <span>💙</span>
+    <span>⭐</span>
+    <span>🌈</span>
+    <span>🦋</span>
+    <span>☁️</span>
+</div>
 
 <header>
     <h1>สร้อยฟ้า พุดสีหมอก</h1>
@@ -79,7 +106,9 @@
         <p><strong>ชื่อ:</strong> สร้อยฟ้า พุดสีหมอก</p>
         <p><strong>วันเกิด:</strong> 1 กรกฎาคม 2005 (วันศุกร์)</p>
         <p><strong>การศึกษา:</strong> ปริญญาตรี มหาวิทยาลัยราชภัฏพระนคร</p>
-        <p><strong>สิ่งที่ชอบ:</strong> สีฟ้า 💙 และรักหมา 🐶</p>
+        <p><strong>สิ่งที่ชอบ:</strong> สีฟ้า 💙, ดูซีรีย์เกาหลี 🎬, ไปเที่ยวคาเฟ่ ☕</p>
+        <p><strong>สัตว์เลี้ยง:</strong> หมาชื่อ "บราวนี่" 🐶 สีดำ</p>
+        <p><strong>เครื่องดื่มโปรด:</strong> โกโก้ 🍫</p>
     </div>
 
     <h2>ทักษะ (Skills)</h2>
@@ -87,25 +116,28 @@
         <ul>
             <li>HTML</li>
             <li>CSS</li>
-            <li>Cloud Computing พื้นฐาน</li>
-            <li>GitHub & Netlify Deployment</li>
+            <li>Cloud Computing</li>
+            <li>GitHub & Netlify</li>
         </ul>
     </div>
 
     <h2>ช่องทางติดต่อ</h2>
     <div class="card">
         <p><strong>Instagram:</strong> 
-            <a href="https://instagram.com/favvvbloo" target="_blank">
-                @favvvbloo
-            </a>
+            <a href="https://instagram.com/favvvbloo" target="_blank">@favvvbloo</a>
         </p>
-        <p><strong>เบอร์ติดต่อ:</strong> 092-793-4954</p>
+        <p><strong>เบอร์โทร:</strong> 092-793-4954</p>
+
+        <div class="qr">
+            <p><strong>LINE QR Code:</strong></p>
+            <img src="LINE-QR.jpg" alt="LINE QR Code">
+        </div>
     </div>
 
 </section>
 
 <footer>
-    <p>© 2026 Soifah Portfolio | Built with HTML & CSS</p>
+    © 2026 Soifah Portfolio 💙
 </footer>
 
 </body>
