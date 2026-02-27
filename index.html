@@ -21,12 +21,12 @@ body {
     opacity: 0.8;
 }
 
-.background-decor span:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
-.background-decor span:nth-child(2) { top: 30%; left: 80%; animation-delay: 2s; }
-.background-decor span:nth-child(3) { top: 70%; left: 15%; animation-delay: 4s; }
-.background-decor span:nth-child(4) { top: 60%; left: 60%; animation-delay: 1s; }
-.background-decor span:nth-child(5) { top: 20%; left: 40%; animation-delay: 3s; }
-.background-decor span:nth-child(6) { top: 85%; left: 75%; animation-delay: 5s; }
+.background-decor span:nth-child(1) { top: 10%; left: 5%; }
+.background-decor span:nth-child(2) { top: 30%; left: 80%; }
+.background-decor span:nth-child(3) { top: 70%; left: 15%; }
+.background-decor span:nth-child(4) { top: 60%; left: 60%; }
+.background-decor span:nth-child(5) { top: 20%; left: 40%; }
+.background-decor span:nth-child(6) { top: 85%; left: 75%; }
 
 @keyframes float {
     0% { transform: translateY(0px); }
@@ -53,26 +53,28 @@ h2 {
 .card {
     background-color: white;
     color: #333;
-    padding: 20px;
+    padding: 25px;
     margin: 20px 0;
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    position: relative;
 }
+
+/* การ์ตูนในกล่อง */
+.card .decor {
+    position: absolute;
+    font-size: 25px;
+}
+
+.card .d1 { top: 10px; right: 15px; }
+.card .d2 { bottom: 10px; left: 15px; }
+.card .d3 { top: 50%; right: 10px; }
+.card .d4 { bottom: 15px; right: 40px; }
 
 a {
     color: #2575fc;
     text-decoration: none;
     font-weight: bold;
-}
-
-.qr {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.qr img {
-    width: 200px;
-    border-radius: 10px;
 }
 
 footer {
@@ -103,6 +105,11 @@ footer {
 
     <h2>ประวัติส่วนตัว</h2>
     <div class="card">
+        <span class="decor d1">🌸</span>
+        <span class="decor d2">✨</span>
+        <span class="decor d3">💖</span>
+        <span class="decor d4">🧸</span>
+
         <p><strong>ชื่อ:</strong> สร้อยฟ้า พุดสีหมอก</p>
         <p><strong>วันเกิด:</strong> 1 กรกฎาคม 2005 (วันศุกร์)</p>
         <p><strong>การศึกษา:</strong> ปริญญาตรี มหาวิทยาลัยราชภัฏพระนคร</p>
@@ -113,25 +120,30 @@ footer {
 
     <h2>ทักษะ (Skills)</h2>
     <div class="card">
+        <span class="decor d1">🎵</span>
+        <span class="decor d2">🎶</span>
+        <span class="decor d3">🎸</span>
+        <span class="decor d4">🥁</span>
+
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Cloud Computing</li>
-            <li>GitHub & Netlify</li>
+            <li>ร้องเพลง 🎤</li>
+            <li>เต้นได้ 💃</li>
+            <li>เล่นกีตาร์ได้นิดหน่อย 🎸</li>
+            <li>เล่นกลองได้นิดหน่อย 🥁</li>
         </ul>
     </div>
 
     <h2>ช่องทางติดต่อ</h2>
     <div class="card">
+        <span class="decor d1">📱</span>
+        <span class="decor d2">💌</span>
+        <span class="decor d3">🌟</span>
+        <span class="decor d4">💗</span>
+
         <p><strong>Instagram:</strong> 
             <a href="https://instagram.com/favvvbloo" target="_blank">@favvvbloo</a>
         </p>
         <p><strong>เบอร์โทร:</strong> 092-793-4954</p>
-
-        <div class="qr">
-            <p><strong>LINE QR Code:</strong></p>
-            <img src="LINE-QR.jpg" alt="LINE QR Code">
-        </div>
     </div>
 
 </section>
